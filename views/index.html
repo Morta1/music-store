@@ -14,22 +14,39 @@
 </head>
 <body ng-app="app" class="ng-cloak">
     <div id="site-wrapper">
-        <nav class="container" ng-if="vm.logged">
-            <ul class="main-navigator">
-                <li class="button"><a href="#/">Home</a></li>
-                <li class="button"><a href="#/">My account</a></li>
-                <li class="button"><a href="#/">My Wishlist</a></li>
-                <li class="button"><a href="#/">Checkout</a></li>
-                <li class="button"><a href="#/">Log In</a></li>
-            </ul>
+        <nav class="navbar navbar-inverse no-margin-bottom">
+            <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">MUSIC</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div  class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class=""><a href="#/">Home</a></li>
+                        <li class=""><a href="#/">My account</a></li>
+                        <li class=""><a href="#/">My Wishlist</a></li>
+                        <li class=""><a href="#/">Checkout</a></li>
+                        <li ><a href="#/">Register</a></li>
+                        <li ><a href="#/">Log In</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
+
         <section class="menu">
             <section class="container">
                 <section class="row">
-                    <section class="col-md-2 col-sm-2 logo">MUSIC</section>
-                    <section class="col-md-8 col-sm-8 search"><input type="text" placeholder="Search"></section>
-                    <section class="col-md-2 col-sm-2 cart">
-                        <p class="welcome">Welcome to our online store!</p>
+                    <section class="col-xs-9 search"><input type="text" placeholder="Search"></section>
+                    <section class="col-xs-3 cart">
+                        <p class="welcome hidden-xs">Welcome to our online store!</p>
                         <a href="#/"><i class=" fa fa-shopping-cart" aria-hidden="true"></i></a>
                     </section>
                 </section>

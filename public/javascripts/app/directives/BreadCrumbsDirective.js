@@ -30,6 +30,7 @@
                 // vm.userPath = str.split('/');
                 //remove empty first element
                 vm.userPath.shift();
+                vm.userPath[0] = vm.userPath.length === 1 ? 'Home' : '';
                 console.log(vm.userPath);
             }
         }
