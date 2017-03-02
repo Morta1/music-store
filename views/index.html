@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet/css.css">
+    <link rel="stylesheet" href="stylesheet/breadcrumb.css">
+    <title>Music Store</title>
+</head>
+<body ng-app="app" class="ng-cloak">
+    <div id="site-wrapper">
+        <nav class="container" ng-if="vm.logged">
+            <ul class="main-navigator">
+                <li class="button"><a href="#/">Home</a></li>
+                <li class="button"><a href="#/">My account</a></li>
+                <li class="button"><a href="#/">My Wishlist</a></li>
+                <li class="button"><a href="#/">Checkout</a></li>
+                <li class="button"><a href="#/">Log In</a></li>
+            </ul>
+        </nav>
+        <section class="menu">
+            <section class="container">
+                <section class="row">
+                    <section class="col-md-2 col-sm-2 logo">MUSIC</section>
+                    <section class="col-md-8 col-sm-8 search"><input type="text" placeholder="Search"></section>
+                    <section class="col-md-2 col-sm-2 cart">
+                        <p class="welcome">Welcome to our online store!</p>
+                        <a href="#/"><i class=" fa fa-shopping-cart" aria-hidden="true"></i></a>
+                    </section>
+                </section>
+                <!-- <span ng-if="vm.emptyCart" ng-bind="vm.emptyCart" class="items-number"></span> -->
+            </section>
+        </section>
+        <section class="row">
+            <ng-view></ng-view>
+        </section>
+    </div>
+
+    <!-- scripts -->
+    <script src="https://use.fontawesome.com/eed3ca0162.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" charset="utf-8"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.js"></script>
+
+    <script src="javascripts/app/app.config.js"></script>
+    <script src="javascripts/app/services/albums.factory.js"></script>
+    <script src="javascripts/app/services/albums.service.js"></script>
+    <script src="javascripts/app/controllers/HomeController.js"></script>
+    <script src="javascripts/app/directives/GenreDirective.js"></script>
+    <script src="javascripts/app/directives/AlbumDisplayDirective.js"></script>
+    <script src="javascripts/app/directives/BreadCrumbsDirective.js"></script>
+
+</body>
+</html>

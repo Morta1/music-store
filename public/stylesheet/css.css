@@ -1,0 +1,266 @@
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+body{
+    font-family: 'Bree Serif', serif;
+
+}
+
+.col-md-1, .col-md-2, .col-md-3, .col-md-4,
+.col-md-5, .col-md-6, .col-md-7, .col-md-8,
+.col-md-9, .col-md-10, .col-md-11, .col-md-12{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
+/*nav*/
+nav{
+    position: relative;
+}
+
+ul.main-navigator{
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+    /*border-top:1px solid black;*/
+    /*border-bottom:1px solid black;*/
+}
+
+ul.main-navigator > li{
+    display: inline-block;
+}
+
+ul.main-navigator > li.button{
+    height: 30px;
+    margin-right: 15px;
+    padding: 0 5px;
+    line-height: 30px;
+    font-size:15px;
+    font-weight: bold;
+}
+
+ul > li.button:hover{
+    background: #ededed;
+}
+
+ul.main-navigator > li.button > a{
+    text-decoration: none;
+    color: black;
+}
+
+.items-number{
+    position: absolute;
+    right:-7px;
+    top:25px;
+    font-size: 10px;
+    font-weight: bold;
+    color: white;
+    background: orange;
+    padding : 2px 4px;
+    border-radius: 2px;
+}
+
+/*nav*/
+
+/*menu*/
+section.menu{
+    position: relative;
+    /*border-bottom: 1px solid black;*/
+    height: 50px;
+    background: #eaeaea;
+}
+
+section.menu > .container > .row > .logo{
+    height: 50px;
+    /*border : 1px solid black;*/
+    text-align: center;
+    display: inline-block;
+    line-height: 50px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+section.cart {
+    height: 50px;
+}
+
+section.cart > p.welcome{
+    width: 60%;
+    margin-top: 5px;
+}
+
+section.cart i{
+    color : black;
+    float: right;
+    position: absolute;
+    font-size:30px;
+    right:40px;
+    top:50%;
+    margin-top: -15px;
+}
+
+section.search {
+    position: relative;
+    height: 50px;
+}
+
+section.search input{
+    position: absolute;
+    font-size: 16px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background: white url('../images/searchicon.png') no-repeat 8px 6px;
+    padding: 5px 20px 5px 40px;
+    /*align*/
+    top: 50%;
+    left: 50%;
+    height: 36px;
+    width: 259px;
+    margin-top: -18px;
+    margin-left: -129.5px;
+    /*align*/
+}
+
+.cart > a:link,
+.cart > a:visited {
+    color: black;
+}
+
+/*menu*/
+.hero{
+
+}
+/*album display*/
+
+.album-display{
+    height: 640px;
+    margin-bottom: 20px;
+}
+
+.newest-album{
+    height: 100%;
+    /*border: 1px solid black;*/
+    background : url('https://i.ytimg.com/vi/SFfrthBpqQA/maxresdefault.jpg') no-repeat;
+    background-size: 100%;
+}
+
+.new-albums{
+    height: 483px;
+    /*border: 1px solid black;*/
+}
+
+.new-albums .displayed-album{
+    /*border: 1px solid black;*/
+    width: 320px;
+    height: 320px;
+    background : url('https://i.ytimg.com/vi/SFfrthBpqQA/maxresdefault.jpg') no-repeat;
+    background-size: 320px;
+}
+
+/*album display*/
+
+/*genres*/
+
+.genres{
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    float: left;
+}
+
+.genres > a{
+    text-decoration: none;
+}
+
+.genre{
+    color: black;
+    width: 200px;
+    height: 30px;
+    border: solid 1px black;
+    text-align: center;
+    line-height: 30px;
+    background-color: #c5c5c5;
+    margin-bottom: 5px;
+}
+/*genres*/
+/*content*/
+.content{
+    /*border: solid 1px #999;*/
+    padding: 15px;
+}
+
+.album-holder{
+    width: 900px;
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.album-holder > section{
+    position: relative;
+    float: left;
+    height: 230px;
+    width: 160px;
+    margin: 0 10px 15px 10px;
+    border: 1px solid black;
+    background : url('https://i.kinja-img.com/gawker-media/image/upload/s--1T9dSXzB--/equyjugawdrhqagckd2g.jpg') no-repeat;
+    background-size: 160px 230px;
+}
+
+.album-holder > section:hover > .info > .album-name{
+    text-overflow: clip;
+    overflow: visible;
+    display: block;
+}
+
+.album-holder > section > .info{
+    position: absolute;
+    bottom: 0;
+    background-color: black;
+    width: 100%;
+}
+
+
+.album-holder > section > .info > .album-name{
+    color: white;
+    padding: 0 3px;
+    display: block;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-transform: capitalize;
+}
+
+.album-holder > section > .info > .price{
+    color : red;
+    display: inline-block;
+    font-size: 20px;
+    padding-left: 3px;
+}
+
+.album-holder > section > .info > .icons{
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.album-holder > section > .info > .icons > i{
+    color: white;
+    font-size:20px;
+    margin-right:5px;
+    cursor: pointer;
+}
+/*content*/
+
+.capitalize{
+    text-transform: capitalize;
+}
+
+.bread-divider{
+    margin-right: 3px;
+}
