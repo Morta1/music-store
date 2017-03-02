@@ -6,8 +6,9 @@
     myRouter.$inject = ['$routeProvider'];
 
     function myRouter($routeProvider){
+        console.log("Test config");
         $routeProvider
-            .when('/home', {
+            .when('/', {
                templateUrl : 'javascripts/app/templates/home.html',
                controller : 'HomeController',
                controllerAs : 'vm'
