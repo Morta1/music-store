@@ -16,6 +16,9 @@
                 templateUrl : 'javascripts/app/templates/album.html',
                 controller : 'AlbumController',
                 controllerAs : 'vm'
+            })
+            .otherwise({
+                redirectTo : '/'
             });
     }
 })();
