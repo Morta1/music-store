@@ -12,8 +12,8 @@
                controller : 'HomeController',
                controllerAs : 'vm'
             })
-            .when('/album', {
-                templateUrl : 'javascripts/app/templates/album.html',
+            .when('/albums', {
+                templateUrl : 'javascripts/app/templates/albums.html',
                 controller : 'AlbumController',
                 controllerAs : 'vm'
             })

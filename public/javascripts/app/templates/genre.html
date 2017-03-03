@@ -1,3 +1,5 @@
 <ul class="genres row">
-    <a class="small-padding col-xs-6 col-md-12" href="#/{{genre}}" data-ng-repeat="genre in vm.genres"><li class="genre">{{genre}}</li></a>
+    <a class="small-padding col-xs-6 col-md-12" href="" data-ng-repeat="genre in vm.genres">
+        <li tabindex="{{$index}}" class="genre">{{genre}}</li>
+    </a>
 </ul>

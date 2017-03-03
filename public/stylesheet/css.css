@@ -115,6 +115,9 @@ section.search input{
     background-color: #c5c5c5;
     margin-bottom: 5px;
 }
+.genre:focus{
+    background: #ea6767;
+}
 /*genres*/
 
 /*content*/
@@ -140,7 +143,7 @@ section.search input{
     padding: 0 3px;
     display: -webkit-box;
     -webkit-line-clamp: 1;
-        -webkit-box-orient: vertical;
+    -webkit-box-orient: vertical;
     overflow:hidden;
     text-transform: capitalize;
 }
