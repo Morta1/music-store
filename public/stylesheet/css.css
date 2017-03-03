@@ -1,10 +1,11 @@
+/*angular cloak*/
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
   display: none !important;
 }
+/*angular cloak*/
 
 body{
     font-family: 'Bree Serif', serif;
-
 }
 
 .col-md-1, .col-md-2, .col-md-3, .col-md-4,
@@ -13,7 +14,6 @@ body{
     margin: 0 !important;
     padding: 0 !important;
 }
-
 
 /*nav*/
 nav{
@@ -24,30 +24,6 @@ ul.main-navigator{
     list-style-type: none;
     margin:0;
     padding: 0;
-    /*border-top:1px solid black;*/
-    /*border-bottom:1px solid black;*/
-}
-
-ul.main-navigator > li{
-    display: inline-block;
-}
-
-ul.main-navigator > li.button{
-    height: 30px;
-    margin-right: 15px;
-    padding: 0 5px;
-    line-height: 30px;
-    font-size:15px;
-    font-weight: bold;
-}
-
-ul > li.button:hover{
-    background: #ededed;
-}
-
-ul.main-navigator > li.button > a{
-    text-decoration: none;
-    color: black;
 }
 
 .items-number{
@@ -61,24 +37,16 @@ ul.main-navigator > li.button > a{
     padding : 2px 4px;
     border-radius: 2px;
 }
-
-.no-margin-bottom{
-    margin-bottom : 0 ;
-}
-
 /*nav*/
 
 /*menu*/
 section.menu{
     position: relative;
-    /*border-bottom: 1px solid black;*/
     height: 50px;
-    background: #eaeaea;
 }
 
 section.menu > .container > .row > .logo{
     height: 50px;
-    /*border : 1px solid black;*/
     text-align: center;
     display: inline-block;
     line-height: 50px;
@@ -136,21 +104,19 @@ section.search input{
     margin-bottom: 20px;
 }
 
-img{
-    width:100%;
+.album-display img{
+   width:100%;
 }
-
 
 /*album display*/
 
 /*genres*/
 
 .genres{
-    display: inline-block;
     padding: 0;
     margin: 0;
     list-style-type: none;
-    float: left;
+    width: 200px;
 }
 
 .genres > a{
@@ -171,14 +137,7 @@ img{
 
 /*content*/
 .content{
-    /*border: solid 1px #999;*/
     padding: 15px;
-}
-
-.album-holder{
-    width: 900px;
-    margin: 0 10px;
-    display: inline-block;
 }
 
 .album-holder > section{
@@ -188,8 +147,11 @@ img{
     width: 160px;
     margin: 0 10px 15px 10px;
     border: 1px solid black;
-    background : url('https://i.kinja-img.com/gawker-media/image/upload/s--1T9dSXzB--/equyjugawdrhqagckd2g.jpg') no-repeat;
-    background-size: 160px 230px;
+}
+
+.album-holder > section > span > img{
+    max-width: 100%;
+    height: 80%;
 }
 
 .album-holder > section:hover > .info > .album-name{
@@ -198,13 +160,12 @@ img{
     display: block;
 }
 
-.album-holder > section > .info{
+.album-holder > section > .info {
     position: absolute;
     bottom: 0;
     background-color: black;
     width: 100%;
 }
-
 
 .album-holder > section > .info > .album-name{
     color: white;
@@ -239,10 +200,28 @@ img{
 }
 /*content*/
 
+/*Misc*/
 .capitalize{
     text-transform: capitalize;
 }
 
 .bread-divider{
-    margin-right: 3px;
+    margin: 0 3px 0 3px;
 }
+
+.margin-top-bot{
+    margin: 10px 0;
+}
+
+.no-margin-bottom{
+    margin-bottom : 0 ;
+}
+
+.background-grey{
+    background-color : #eaeaea;
+}
+
+.border{
+    border: 1px solid black;
+}
+/*Misc*/

@@ -20,12 +20,11 @@
   vertical-align: middle;
 }
 .ui.breadcrumb:first-child {
-  margin-top: 0em;
+  margin-top: 1em;
 }
 .ui.breadcrumb:last-child {
-  margin-bottom: 0em;
+  margin-bottom: 1em;
 }
-
 
 /*******************************
           Content

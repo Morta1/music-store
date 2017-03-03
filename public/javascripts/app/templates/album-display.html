@@ -1,12 +1,16 @@
-<section class="album-holder">
+<section class="album-holder row">
     <section data-ng-repeat="album in vm.albums">
+        <span>
+            <img src="http://www.billboard.com/files/media/Green-Day-American-Idiot-album-covers-billboard-1000x1000.jpg" alt="">
+        </span>
         <section class="info">
             <span class="album-name">{{album.name}}</span>
             <span class="price">{{album.price}}</span>
             <section class="icons">
-                <i class=" fa fa-shopping-cart" aria-hidden="true"></i>
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                 <i class="fa fa-info-circle" aria-hidden="true"></i>
             </section>
         </section>
     </section>
 </section>
+

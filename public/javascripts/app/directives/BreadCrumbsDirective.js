@@ -25,13 +25,16 @@
             activate();
 
             function activate(){
-                const str = '/home/store';
-                vm.userPath = $location.path().split('/');
-                // vm.userPath = str.split('/');
-                //remove empty first element
-                vm.userPath.shift();
-                vm.userPath[0] = vm.userPath.length === 1 ? 'Home' : '';
-                console.log(vm.userPath);
+                if ($location.path() !== "/"){
+                    vm.userPath = $location.path().split('/');
+                    //remove first element
+                    vm.userPath.shift();
+                    //add first element 'home'
+                    vm.userPath.unshift('Home');
+                }
+                else{
+                    vm.userPath.unshift('Home');
+                }
             }
         }
     }

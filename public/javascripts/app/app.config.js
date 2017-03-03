@@ -6,12 +6,16 @@
     myRouter.$inject = ['$routeProvider'];
 
     function myRouter($routeProvider){
-        console.log("Test config");
         $routeProvider
             .when('/', {
                templateUrl : 'javascripts/app/templates/home.html',
                controller : 'HomeController',
                controllerAs : 'vm'
+            })
+            .when('/album', {
+                templateUrl : 'javascripts/app/templates/album.html',
+                controller : 'AlbumController',
+                controllerAs : 'vm'
             });
     }
 })();
