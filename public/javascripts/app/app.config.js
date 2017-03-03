@@ -7,7 +7,7 @@
 
     function myRouter($routeProvider){
         $routeProvider
-            .when('/', {
+            .when('/home', {
                templateUrl : 'javascripts/app/templates/home.html',
                controller : 'HomeController',
                controllerAs : 'vm'
@@ -18,7 +18,7 @@
                 controllerAs : 'vm'
             })
             .otherwise({
-                redirectTo : '/'
+                redirectTo : '/home'
             });
     }
 })();
