@@ -8,7 +8,9 @@
         var directive = {
             restrict : 'EA',
             templateUrl : 'javascripts/app/templates/album-display.html',
-            scope : {},
+            scope : {
+                showDesc : '@'
+            },
             controller : albumDisplayController,
             controllerAs : 'vm'
         }
@@ -25,13 +27,9 @@
             activate();
 
             function activate(){
-                albumsService.getAlbums()
-                    .then((data)=>{
-                        vm.albums = data;
-                    })
-                    .catch((err)=>{
-                        console.log(err);
-                    });
+                vm.albums = albumsService.getAlbums();
+                console.log($scope);
+                // console.log(vm);
             }
         }
     }

@@ -10,13 +10,13 @@
 
     function albumsFactory($http, $q){
         var factory = {
-            getAlbums
+            returnData
         };
 
         return factory;
 
-        function getAlbums(){
-           return $http.get('javascripts/app/albums.json')
+        function returnData(){
+            return $http.get('javascripts/app/albums.json')
                 .then((response) => {
                     return response.data;
                 })

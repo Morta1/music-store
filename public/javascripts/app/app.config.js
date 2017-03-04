@@ -10,12 +10,32 @@
             .when('/home', {
                templateUrl : 'javascripts/app/templates/home.html',
                controller : 'HomeController',
-               controllerAs : 'vm'
+               controllerAs : 'vm',
+                resolve : {
+                    albums : ['albumsService' , function(albumsService){
+                        return albumsService.returnData()
+                            .then(function(){
+                            })
+                            .catch(function(err){
+                                console.log('error fetching albums');
+                            });
+                    }]
+                }
             })
             .when('/albums', {
                 templateUrl : 'javascripts/app/templates/albums.html',
-                controller : 'AlbumController',
-                controllerAs : 'vm'
+                controller : 'AlbumsController',
+                controllerAs : 'vm',
+                resolve : {
+                    albums : ['albumsService' , function(albumsService){
+                        return albumsService.returnData()
+                            .then(function(){
+                            })
+                            .catch(function(err){
+                                console.log('error fetching albums');
+                            });
+                    }]
+                }
             })
             .otherwise({
                 redirectTo : '/home'

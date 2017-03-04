@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="stylesheet/breadcrumb.css">
     <title>Music Store</title>
 </head>
-<body ng-app="app" class="ng-cloak">
+<body ng-app="app" class="ng-cloak" data-ng-controller="MainController as vm">
     <div id="site-wrapper">
         <nav class="navbar navbar-inverse no-margin-bottom">
             <div class="container">
@@ -68,8 +68,9 @@
     <script src="javascripts/app/app.config.js"></script>
     <script src="javascripts/app/services/albums.factory.js"></script>
     <script src="javascripts/app/services/albums.service.js"></script>
+    <script src="javascripts/app/controllers/MainController.js"></script>
     <script src="javascripts/app/controllers/HomeController.js"></script>
-    <script src="javascripts/app/controllers/AlbumController.js"></script>
+    <script src="javascripts/app/controllers/AlbumsController.js"></script>
     <script src="javascripts/app/directives/GenreDirective.js"></script>
     <script src="javascripts/app/directives/AlbumDisplayDirective.js"></script>
     <script src="javascripts/app/directives/BreadCrumbsDirective.js"></script>

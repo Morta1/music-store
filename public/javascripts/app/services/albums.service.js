@@ -13,11 +13,19 @@
 
         service.getAlbums = getAlbums;
         service.getGenres = getGenres;
+        service.returnData = returnData;
+        service.getAlbums = getAlbums;
 
-        function getAlbums(){
-            return albumsFactory.getAlbums()
+        var albums = {};
+
+        function getAlbums() {
+            return albums;
+        }
+
+        function returnData(){
+            return albumsFactory.returnData()
                 .then((data)=>{
-                    return data;
+                    albums = data;
                 })
                 .catch((err)=>{
                     $q.reject(err);
@@ -25,7 +33,7 @@
         }
 
         function getGenres(){
-            return albumsFactory.getAlbums()
+            return albumsFactory.returnData()
                 .then((data) => {
                     const genres = [];
                     angular.forEach(data, (val, key) => {

@@ -2,10 +2,10 @@
     'use strict'
     angular
         .module('app')
-        .controller('AlbumController', AlbumController);
-    AlbumController.$inject = ['$log'];
+        .controller('AlbumsController', AlbumsController);
+    AlbumsController.$inject = ['$log'];
 
-    function AlbumController($log){
+    function AlbumsController($log){
         var vm = this;
         $log.info('AlbumController loaded');
     }
