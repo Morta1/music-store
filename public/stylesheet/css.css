@@ -167,7 +167,7 @@ section.search input{
 
 .album-holder > section > .info > .album-name{
     color: white;
-    padding: 0 8px;
+    padding-left: 10px;
     display: -webkit-box;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
@@ -178,13 +178,12 @@ section.search input{
 
 .album-holder > section > .info > .price{
     color : red;
-    display: inline-block;
     font-size: 16px;
-    padding-left: 8px;
+    padding-left: 10px;
 }
 
 .album-holder > section > .info > .icons{
-    display: inline-block;
+    /*display: inline-block;*/
 }
 
 .album-holder > section > .info > .icons > i{
