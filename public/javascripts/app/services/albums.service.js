@@ -13,8 +13,9 @@
 
         service.getAlbums = getAlbums;
         service.getGenres = getGenres;
-        service.returnData = returnData;
+        service.getAllData = getAllData;
         service.getAlbums = getAlbums;
+        service.getAlbumsFromGenre = getAlbumsFromGenre;
 
         var albums = {};
 
@@ -22,8 +23,8 @@
             return albums;
         }
 
-        function returnData(){
-            return albumsFactory.returnData()
+        function getAllData(){
+            return albumsFactory.getAllData()
                 .then((data)=>{
                     albums = data;
                 })
@@ -33,21 +34,24 @@
         }
 
         function getGenres(){
-            return albumsFactory.returnData()
-                .then((data) => {
-                    const genres = [];
-                    angular.forEach(data, (val, key) => {
-                        if (genres.indexOf(val.genre) === -1){
-                            genres.push(val.genre);
-                        }
-                    });
-                    return genres;
-                })
-                .catch((err) => {
-                    $q.reject(err);
-                });
+            const genres = [];
+            angular.forEach(albums, (val, key) => {
+                if (genres.indexOf(val.genre) === -1){
+                    genres.push(val.genre);
+                }
+            });
+            return genres;
         }
 
+        function getAlbumsFromGenre(genre){
+            const albumsFromGenre = [];
+            angular.forEach(albums, (val, key) => {
+                if (val.genre.toLowerCase() === genre.toLowerCase()){
+                    albumsFromGenre.push(val);
+                }
+            });
+            return albumsFromGenre;
+        }
 
     }
 })();

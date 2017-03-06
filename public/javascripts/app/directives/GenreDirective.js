@@ -7,31 +7,25 @@
     function genreDirective(){
         var directive = {
             restrict : 'EA',
-            templateUrl : 'javascripts/app/templates/genre.html',
-            scope : {},
+            templateUrl : 'javascripts/app/templates/genreTemplate.html',
+            scope : {
+                data : '=',
+                genreName : '=?'
+            },
             controller : genreController,
             controllerAs : 'vm'
         }
 
         return directive;
 
-        genreController.$inject = ['$scope', 'albumsService'];
+        genreController.$inject = ['$scope'];
 
-        function genreController($scope, albumsService){
+        function genreController($scope){
             var vm = this;
-
-            vm.genres = {};
 
             activate();
 
             function activate(){
-                albumsService.getGenres()
-                    .then((data)=>{
-                        vm.genres = data;
-                    })
-                    .catch((err)=>{
-                        console.log(err);
-                    });
             }
         }
     }

@@ -13,7 +13,7 @@
                controllerAs : 'vm',
                 resolve : {
                     albums : ['albumsService' , function(albumsService){
-                        return albumsService.returnData()
+                        return albumsService.getAllData()
                             .then(function(){
                             })
                             .catch(function(err){
@@ -22,13 +22,13 @@
                     }]
                 }
             })
-            .when('/albums', {
-                templateUrl : 'javascripts/app/templates/albums.html',
-                controller : 'AlbumsController',
+            .when('/:genre', {
+                templateUrl : 'javascripts/app/templates/genre.html',
+                controller : 'GenreController',
                 controllerAs : 'vm',
                 resolve : {
                     albums : ['albumsService' , function(albumsService){
-                        return albumsService.returnData()
+                        return albumsService.getAllData()
                             .then(function(){
                             })
                             .catch(function(err){

@@ -1,4 +1,4 @@
 <div class="margin-top-bot ui massive breadcrumb background-grey">
-    <a class="section capitalize" data-ng-repeat-start="path in vm.userPath" href="#/{{path}}">{{path}}</a>
+    <a class="section capitalize" data-ng-repeat-start="path in vm.userPath" href="#/{{path.toLowerCase()}}">{{path}}</a>
     <i ng-if="!$last" class="bread-divider fa fa-angle-double-right" data-ng-repeat-end aria-hidden="true"></i>
 </div>

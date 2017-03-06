@@ -127,16 +127,47 @@ section.search input{
 
 .album-holder > section{
     margin-top: 5px;
+    text-align: center;
 }
 
 .album-holder > section > span > img{
-    width: 100%;
+    width:200px;
+    height: 200px;
 }
-
 .album-holder > section > .info {
     background-color: black;
-    width: 100%;
+    width: 200px;
+    margin: 0 auto;
 }
+
+@media (max-width: 992px){
+    .album-holder > section > span > img{
+        width: 220px;
+    }
+    .album-holder > section > .info {
+        width:220px;
+    }
+}
+@media (max-width: 767px){
+    .album-holder > section > span> img{
+        width:180px;
+    }
+    .album-holder > section > .info {
+        width:180px;
+    }
+}
+@media (max-width: 550px){
+    .album-holder > section > span> img{
+        width:75%;
+    }
+    .album-holder > section > .info {
+        width:75%;
+    }
+}
+
+
+
+
 
 .album-holder > section > .info > .album-name{
     color: white;

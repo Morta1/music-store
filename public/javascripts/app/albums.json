@@ -4,7 +4,7 @@
   "year" : "2009",
   "availability" :  "10",
   "price" : "$22.30",
-  "albumImages" : ["first.jpg", "second.jpg", "third.jpg", "fourth.jpg"],
+  "albumImages" : ["http://www.designformusic.com/wp-content/uploads/2015/10/insurgency-digital-album-cover-design.jpg", "second.jpg", "third.jpg", "fourth.jpg"],
   "shortDescription" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, inventore.",
   "longDescription" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet fugiat, sit. Animi cum eaque enim exercitationem facilis fugit in inventore, maiores minima natus necessitatibus, officia repellendus, voluptate. Aut cupiditate eaque eligendi exercitationem incidunt laudantium quisquam recusandae rerum. Accusamus alias aliquid aperiam aspernatur consequatur debitis dolores minus, porro velit voluptatum! Eveniet."
 },{
@@ -13,7 +13,7 @@
   "year" : "2009",
   "availability" :  "10",
   "price" : "$142.30",
-  "albumImages" : ["first.jpg", "second.jpg", "third.jpg", "fourth.jpg"],
+  "albumImages" : ["http://static.gigwise.com/gallery/5209864_8262181_JasonDeruloTatGall.jpg", "second.jpg", "third.jpg", "fourth.jpg"],
   "shortDescription" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, inventore.",
   "longDescription" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet fugiat, sit. Animi cum eaque enim exercitationem facilis fugit in inventore, maiores minima natus necessitatibus, officia repellendus, voluptate. Aut cupiditate eaque eligendi exercitationem incidunt laudantium quisquam recusandae rerum. Accusamus alias aliquid aperiam aspernatur consequatur debitis dolores minus, porro velit voluptatum! Eveniet."
 },{
@@ -22,7 +22,7 @@
   "year" : "2009",
   "availability" :  "10",
   "price" : "$13.30",
-  "albumImages" : ["first.jpg", "second.jpg", "third.jpg", "fourth.jpg"],
+  "albumImages" : ["http://www.lovethispic.com/uploaded_images/81998-Imagine-Dragons-Album-Cover.jpg", "second.jpg", "third.jpg", "fourth.jpg"],
   "shortDescription" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, inventore.",
   "longDescription" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet fugiat, sit. Animi cum eaque enim exercitationem facilis fugit in inventore, maiores minima natus necessitatibus, officia repellendus, voluptate. Aut cupiditate eaque eligendi exercitationem incidunt laudantium quisquam recusandae rerum. Accusamus alias aliquid aperiam aspernatur consequatur debitis dolores minus, porro velit voluptatum! Eveniet."
 },{
@@ -31,7 +31,7 @@
   "year" : "2009",
   "availability" :  "10",
   "price" : "$42.30",
-  "albumImages" : ["first.jpg", "second.jpg", "third.jpg", "fourth.jpg"],
+  "albumImages" : ["http://ksassets.timeincuk.net/wp/uploads/sites/55/2016/01/2016AdeleAlbumCovers_Pello_1_210116.jpg", "second.jpg", "third.jpg", "fourth.jpg"],
   "shortDescription" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, inventore.",
   "longDescription" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet fugiat, sit. Animi cum eaque enim exercitationem facilis fugit in inventore, maiores minima natus necessitatibus, officia repellendus, voluptate. Aut cupiditate eaque eligendi exercitationem incidunt laudantium quisquam recusandae rerum. Accusamus alias aliquid aperiam aspernatur consequatur debitis dolores minus, porro velit voluptatum! Eveniet."
 },{
@@ -40,16 +40,16 @@
   "year" : "2009",
   "availability" :  "10",
   "price" : "$42.30",
-  "albumImages" : ["first.jpg", "second.jpg", "third.jpg", "fourth.jpg"],
+  "albumImages" : ["https://upload.wikimedia.org/wikipedia/en/c/cf/FLYGOD_album_cover.jpg", "second.jpg", "third.jpg", "fourth.jpg"],
   "shortDescription" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, inventore.",
   "longDescription" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet fugiat, sit. Animi cum eaque enim exercitationem facilis fugit in inventore, maiores minima natus necessitatibus, officia repellendus, voluptate. Aut cupiditate eaque eligendi exercitationem incidunt laudantium quisquam recusandae rerum. Accusamus alias aliquid aperiam aspernatur consequatur debitis dolores minus, porro velit voluptatum! Eveniet."
 },{
-  "name" : "avenged sevenfold",
-  "genre" : "Rock",
+  "name" : "Music",
+  "genre" : "Alternative rock",
   "year" : "2009",
   "availability" :  "10",
   "price" : "$444.30",
-  "albumImages" : ["first.jpg", "second.jpg", "third.jpg", "fourth.jpg"],
+  "albumImages" : ["http://4.bp.blogspot.com/-ABhte_JFzcI/UM6m49lkKYI/AAAAAAAADJc/DUIkgMrHmhs/s1600/the_resistance_wallpaper_muse-normal.jpg", "second.jpg", "third.jpg", "fourth.jpg"],
   "shortDescription" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, inventore.",
   "longDescription" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet fugiat, sit. Animi cum eaque enim exercitationem facilis fugit in inventore, maiores minima natus necessitatibus, officia repellendus, voluptate. Aut cupiditate eaque eligendi exercitationem incidunt laudantium quisquam recusandae rerum. Accusamus alias aliquid aperiam aspernatur consequatur debitis dolores minus, porro velit voluptatum! Eveniet."
 }]
