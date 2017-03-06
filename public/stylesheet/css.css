@@ -150,10 +150,10 @@ section.search input{
 }
 @media (max-width: 767px){
     .album-holder > section > span> img{
-        width:50%;
+        width:180px;
     }
     .album-holder > section > .info {
-        width:50%;
+        width:180px;
     }
 }
 @media (max-width: 550px){
