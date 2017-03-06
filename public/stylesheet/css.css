@@ -115,7 +115,7 @@ section.search input{
     background-color: #c5c5c5;
     margin-bottom: 5px;
 }
-.genre:focus{
+.selected{
     background: #ea6767;
 }
 /*genres*/

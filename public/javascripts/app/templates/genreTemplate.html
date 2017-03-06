@@ -1,0 +1,5 @@
+<ul class="genres row">
+    <a href="#/{{genre}}" class="small-padding col-xs-6 col-md-12" data-ng-repeat="genre in data">
+        <li data-ng-class="genreName === genre ? 'genre selected': 'genre'" tabindex="{{$index}}" class="genre">{{genre}}</li>
+    </a>
+</ul>

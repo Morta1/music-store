@@ -1,7 +1,7 @@
 <section class="album-holder row">
-    <section class="margin-bottom col-xs-6 col-md-3" data-ng-repeat="album in vm.albums">
+    <section class="margin-bottom col-xs-6 col-md-3" data-ng-repeat="album in data">
         <span>
-            <img src="http://www.billboard.com/files/media/Green-Day-American-Idiot-album-covers-billboard-1000x1000.jpg" alt="">
+            <img data-ng-src="{{album.albumImages[0]}}" alt="">
         </span>
         <section class="info">
             <span class="album-name">{{album.name}}</span>
