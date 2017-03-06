@@ -15,6 +15,7 @@
             vm.genreName = $routeParams.genre;
             vm.genres = albumsService.getGenres();
             vm.albums = albumsService.getAlbumsFromGenre(vm.genreName);
+
         }
     }
 })();

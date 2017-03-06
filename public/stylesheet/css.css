@@ -165,25 +165,22 @@ section.search input{
     }
 }
 
-
-
-
-
 .album-holder > section > .info > .album-name{
     color: white;
-    padding: 0 3px;
+    padding: 0 8px;
     display: -webkit-box;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
     overflow:hidden;
     text-transform: capitalize;
+    text-align: left;
 }
 
 .album-holder > section > .info > .price{
     color : red;
     display: inline-block;
     font-size: 16px;
-    padding-left: 3px;
+    padding-left: 8px;
 }
 
 .album-holder > section > .info > .icons{

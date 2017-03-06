@@ -9,6 +9,8 @@
             restrict : 'EA',
             templateUrl : 'javascripts/app/templates/album-display.html',
             scope : {
+                showDesc : '@?',
+                data : '='
             },
             controller : albumDisplayController,
             controllerAs : 'vm'
@@ -20,8 +22,6 @@
 
         function albumDisplayController($scope, albumsService, $routeParams){
             var vm = this;
-
-
         }
     }
 })();
