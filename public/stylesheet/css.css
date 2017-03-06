@@ -196,7 +196,7 @@ section.search input{
 .short-desc{
     color: #7d7a7a;
     font-size: 13px;
-    padding: 1px;
+    padding-left: 10px;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
