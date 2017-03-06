@@ -168,6 +168,7 @@ section.search input{
 
 .short-desc{
     color: #7d7a7a;
+    font-size: 13px;
     padding: 1px;
     display: -webkit-box;
     -webkit-line-clamp: 2;

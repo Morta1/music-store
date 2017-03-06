@@ -9,7 +9,7 @@
             restrict : 'EA',
             templateUrl : 'javascripts/app/templates/album-display.html',
             scope : {
-                showDesc : '@'
+                showDesc : '@?'
             },
             controller : albumDisplayController,
             controllerAs : 'vm'
