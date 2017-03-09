@@ -1,16 +1,20 @@
 <section class="album-display no-margin row ">
-    <section class="no-padding col-xs-12 col-md-12 col-lg-4">
-        <img src="https://i.ytimg.com/vi/SFfrthBpqQA/maxresdefault.jpg">
+    <section class="newest-album no-padding col-xs-12 col-md-12 col-lg-4">
+        <img data-ng-src="{{vm.newestAlbum[0].albumImages[0]}}">
+        <section class="info">
+            <span class="album-name">{{vm.newestAlbum[0].name}}</span>
+            <span class="short-desc text-left">{{vm.newestAlbum[0].shortDescription}}</span>
+        </section>
+
     </section>
-    <section class="no-padding col-xs-12 col-md-12 col-lg-8">
-        <section class="no-padding col-xs-6 col-md-6 col-lg-3"><img src="https://i.ytimg.com/vi/SFfrthBpqQA/maxresdefault.jpg"></section>
-        <section class="no-padding col-xs-6 col-md-6 col-lg-3"><img src="https://i.ytimg.com/vi/SFfrthBpqQA/maxresdefault.jpg"></section>
-        <section class="no-padding col-xs-6 col-md-6 col-lg-3"><img src="https://i.ytimg.com/vi/SFfrthBpqQA/maxresdefault.jpg"></section>
-        <section class="no-padding col-xs-6 col-md-6 col-lg-3"><img src="https://i.ytimg.com/vi/SFfrthBpqQA/maxresdefault.jpg"></section>
-        <section class="no-padding col-xs-6 col-md-6 col-lg-3"><img src="https://i.ytimg.com/vi/SFfrthBpqQA/maxresdefault.jpg"></section>
-        <section class="no-padding col-xs-6 col-md-6 col-lg-3"><img src="https://i.ytimg.com/vi/SFfrthBpqQA/maxresdefault.jpg"></section>
-        <section class="no-padding col-xs-6 col-md-6 col-lg-3"><img src="https://i.ytimg.com/vi/SFfrthBpqQA/maxresdefault.jpg"></section>
-        <section class="no-padding col-xs-6 col-md-6 col-lg-3"><img src="https://i.ytimg.com/vi/SFfrthBpqQA/maxresdefault.jpg"></section>
+    <section class="no-padding col-xs-12 col-md-6 col-lg-8">
+        <section data-ng-repeat="album in vm.recentAlbums" class="no-padding col-xs-6 col-md-6 col-lg-3">
+            <img data-ng-src="{{album.albumImages[0]}}">
+            <section class="info">
+                <span class="album-name">{{album.name}}</span>
+                <span class="short-desc text-left">{{album.shortDescription}}</span>
+            </section>
+        </section>
     </section>
 </section>
 <section class="container">
@@ -19,6 +23,6 @@
 <section class="content container">
     <section class="row">
         <genre-directive data="vm.genres" class="col-xs-12 col-md-3"></genre-directive>
-        <album-display-directive data="vm.albums" class="col-xs-12 col-md-9"></album-display-directive>
+        <album-display-directive data="vm.newAlbums" class="col-xs-12 col-md-9"></album-display-directive>
     </section>
 </section>

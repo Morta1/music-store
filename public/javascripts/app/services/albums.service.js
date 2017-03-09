@@ -16,6 +16,7 @@
         service.getAllData = getAllData;
         service.getAlbums = getAlbums;
         service.getAlbumsFromGenre = getAlbumsFromGenre;
+        service.getRecentAlbums = getRecentAlbums;
 
         var albums = {};
 
@@ -51,6 +52,29 @@
                 }
             });
             return albumsFromGenre;
+        }
+
+        function getRecentAlbums(index, amount) {
+            const tempAlbums = [];
+            angular.copy(albums, tempAlbums);
+            const recentAlbums = [];
+            let size;
+            if (amount === undefined || amount > tempAlbums.length){
+                size = tempAlbums.length;
+            }
+            else{
+                size = amount;
+            }
+            console.log(size);
+            tempAlbums.sort(function(a,b) {
+                return new Date(a.added).getTime() - new Date(b.added).getTime()
+            });
+            
+            for (let i = index; i < size; i++) {
+                recentAlbums.push(tempAlbums[i]);
+            }
+            console.log('from', index, 'to', size, recentAlbums);
+            return recentAlbums;
         }
 
     }

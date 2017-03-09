@@ -88,8 +88,43 @@ section.search input{
     margin-bottom: 20px;
 }
 
-.album-display img{
-   width:100%;
+.album-display > section > section > img{
+    width: 318px;
+    height: 317px;
+}
+
+.album-display > section > section > .info{
+    position: absolute;
+    bottom: 0px;
+    background: #1b1717;
+    opacity: 0.9;
+}
+
+.album-display > .newest-album > .info{
+    position: absolute;
+    bottom: 0px;
+    background: #1b1717;
+    opacity: 0.9;
+    font-size: 30px;
+    width: 100%;
+}
+
+
+.album-display > section > section > section > .album-name,
+.album-display > .newest-album > section > .album-name{
+    color: white;
+    margin-left: 8px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow:hidden;
+    text-transform: capitalize;
+    text-align: left;
+}
+
+.album-display > .newest-album > img{
+    width: 634px;
+    height: 634px;
 }
 
 /*album display*/
@@ -140,6 +175,7 @@ section.search input{
     margin: 0 auto;
 }
 
+
 @media (max-width: 992px){
     .album-holder > section > span > img{
         width: 220px;
@@ -147,6 +183,14 @@ section.search input{
     .album-holder > section > .info {
         width:220px;
     }
+    /*.album-display > section > section > img{*/
+        /*width: 318px;*/
+        /*height: 317px;*/
+    /*}*/
+
+    /*.album-display > .newest-album > img{*/
+        /*width: 100%;*/
+    /*}*/
 }
 @media (max-width: 767px){
     .album-holder > section > span> img{
