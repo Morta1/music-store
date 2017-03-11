@@ -37,6 +37,21 @@
                     }]
                 }
             })
+            .when('/:genre/:id', {
+                templateUrl : 'javascripts/app/templates/album-page.html',
+                controller : 'AlbumController',
+                controllerAs : 'vm',
+                resolve : {
+                    album : ['albumsService', function(albumsService){
+                        return albumsService.getAllData()
+                            .then(function(){
+                            })
+                            .catch(function(err){
+                                console.log('error album');
+                            });
+                    }]
+                }
+            })
             .otherwise({
                 redirectTo : '/home'
             });

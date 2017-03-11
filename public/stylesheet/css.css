@@ -88,7 +88,7 @@ section.search input{
     margin-bottom: 20px;
 }
 
-.album-display > section > section > img{
+.album-display > section > section > a > img{
     width: 318px;
     height: 317px;
 }
@@ -105,7 +105,7 @@ section.search input{
     bottom: 0px;
     background: #1b1717;
     opacity: 0.9;
-    font-size: 30px;
+    font-size: 27px;
     width: 100%;
 }
 
@@ -122,7 +122,7 @@ section.search input{
     text-align: left;
 }
 
-.album-display > .newest-album > img{
+.album-display > .newest-album > a >img{
     width: 634px;
     height: 634px;
 }
@@ -165,7 +165,7 @@ section.search input{
     text-align: center;
 }
 
-.album-holder > section > span > img{
+.album-holder > section > span > a > img{
     width:200px;
     height: 200px;
 }
@@ -177,7 +177,7 @@ section.search input{
 
 
 @media (max-width: 992px){
-    .album-holder > section > span > img{
+    .album-holder > section > span > a > img{
         width: 220px;
     }
     .album-holder > section > .info {

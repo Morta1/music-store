@@ -17,8 +17,9 @@
         service.getAlbums = getAlbums;
         service.getAlbumsFromGenre = getAlbumsFromGenre;
         service.getRecentAlbums = getRecentAlbums;
+        service.getSpecificAlbum = getSpecificAlbum;
 
-        var albums = {};
+        let albums = {};
 
         function getAlbums() {
             return albums;
@@ -65,7 +66,6 @@
             else{
                 size = amount;
             }
-            console.log(size);
             tempAlbums.sort(function(a,b) {
                 return new Date(a.added).getTime() - new Date(b.added).getTime()
             });
@@ -73,9 +73,21 @@
             for (let i = index; i < size; i++) {
                 recentAlbums.push(tempAlbums[i]);
             }
-            console.log('from', index, 'to', size, recentAlbums);
             return recentAlbums;
         }
 
+
+        function getSpecificAlbum(id){
+            return albumsFactory.getSpecificAlbum(id)
+                .then(function(response){
+                    let album = albums.filter(function(obj) {
+                        return obj._id == id;
+                    });
+                    return album;
+                })
+                .catch(function(err){
+
+                });
+        }
     }
 })();

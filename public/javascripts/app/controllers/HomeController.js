@@ -15,9 +15,7 @@
             vm.genres = albumsService.getGenres();
             vm.newestAlbum = albumsService.getRecentAlbums(0,1);
             vm.recentAlbums = albumsService.getRecentAlbums(1, 9);
-            vm.newAlbums = albumsService.getRecentAlbums(9);
-            
-            console.log(vm.newestAlbum[0].albumImages[0]);
+            vm.newAlbums = albumsService.getRecentAlbums(9,29);
         }
 
     }

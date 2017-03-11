@@ -27,7 +27,7 @@
             function activate(){
                 if ($location.path() !== "/home"){
                     vm.userPath = $location.path().split('/');
-                    //remove first element
+                    //remove first element (empty)
                     vm.userPath.shift();
                     //add first element 'home'
                     vm.userPath.unshift('Home');
