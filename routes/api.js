@@ -26,16 +26,14 @@ Api.get('/getAlbums', (req, res) => {
         })
 });
 
-Api.get('/getAlbum', (req, res) => {
-    console.log("request");
-    console.log(req);
-    // Album.findById(req.id).exec()
-    //     .then((data)=>{
-    //         res.json(data);
-    //     })
-    //     .catch(()=>{
-    //         res.status(500).json("Error fetching albums");
-    //     });
+Api.get('/getAlbum/:id', (req, res) => {
+    Album.findById(req.params.id).exec()
+        .then((data)=>{
+            res.json(data);
+        })
+        .catch(()=>{
+            res.status(500).json("Error fetching album");
+        });
 });
 
 module.exports = Api;

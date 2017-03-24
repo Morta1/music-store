@@ -1,6 +1,6 @@
 <section class="album-display no-margin row ">
     <section class="newest-album no-padding col-xs-12 col-md-12 col-lg-4">
-        <a data-ng-href="{{'#/' + vm.newestAlbum[0].genre + '/' + vm.newestAlbum[0].name}}">
+        <a data-ng-href="{{'#/' + vm.newestAlbum[0].genre.toLowerCase() + '/' + vm.newestAlbum[0].name.toLowerCase()}}">
             <img data-ng-src="{{vm.newestAlbum[0].albumImages[0]}}">
         </a>
         <section class="info">
@@ -11,7 +11,7 @@
     </section>
     <section class="no-padding col-xs-12 col-md-6 col-lg-8">
         <section data-ng-repeat="album in vm.recentAlbums" class="no-padding col-xs-6 col-md-6 col-lg-3">
-            <a data-ng-href="{{'#/' + album.genre + '/' + album.name + / }}"><img data-ng-src="{{album.albumImages[0]}}"></a>
+            <a data-ng-href="{{'#/' + album.genre.toLowerCase() + '/' + album.name.toLowerCase() + '/' }}"><img data-ng-src="{{album.albumImages[0]}}"></a>
             <section class="info">
                 <span class="album-name">{{album.name}}</span>
                 <span class="short-desc text-left">{{album.shortDesc}}</span>
@@ -28,4 +28,3 @@
         <album-display-directive data="vm.newAlbums" class="col-xs-12 col-md-9"></album-display-directive>
     </section>
 </section>
-<a href="/home/">This is a test</a>

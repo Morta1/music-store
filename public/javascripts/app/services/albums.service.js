@@ -79,11 +79,8 @@
 
         function getSpecificAlbum(id){
             return albumsFactory.getSpecificAlbum(id)
-                .then(function(response){
-                    let album = albums.filter(function(obj) {
-                        return obj._id == id;
-                    });
-                    return album;
+                .then(function(data){
+                    return data;
                 })
                 .catch(function(err){
 

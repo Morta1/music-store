@@ -248,6 +248,20 @@ section.search input{
 }
 /*content*/
 
+/**/
+.album-page img{
+    width: 100%;
+}
+
+.album-page .album-name{
+    font-size: 20px;
+}
+
+.album-page .secondary-images{
+    margin-top: 15px;
+}
+
+/**/
 /*Misc*/
 .capitalize{
     text-transform: capitalize;

@@ -1,8 +1,29 @@
 <section class="container">
     <bread-crumbs-directive></bread-crumbs-directive>
 </section>
-<section class="content container">
+<section class="content container album-page">
     <section class="row">
         <genre-directive data="vm.genres" genre-name="vm.genreName" class="col-xs-12 col-md-3"></genre-directive>
+        <div class="col-xs-12 col-md-9">
+            <div class="row">
+                <div class="col-md-6">
+                    <img data-ng-src="{{vm.displayedImage}}" alt="mainImg">
+                </div>
+                <div class="col-md-6">
+                    <span class="album-name">{{vm.album.name + '(' + vm.album.year +')' }}</span>
+                </div>
+            </div>
+            <div class="secondary-images row">
+                <div class="col-md-2 no-padding no-margin" data-ng-repeat="img in vm.album.albumImages track by $index">
+                    <img data-ng-src="{{img}}" alt="secondImg" data-ng-click="vm.updateImage(img)">
+                </div>
+                <!--<div class="col-md-2 no-padding no-margin">-->
+                    <!--<img data-ng-src="images/albumcovers/default.png" alt="secondImg" data-ng-click="vm.updateImage()">-->
+                <!--</div>-->
+                <!--<div class="col-md-2 no-padding no-margin">-->
+                    <!--<img data-ng-src="{{vm.album.albumImages[0]}}" alt="secondImg" data-ng-click="vm.updateImage()">-->
+                <!--</div>-->
+            </div>
+        </div>
     </section>
 </section>

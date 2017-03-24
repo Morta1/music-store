@@ -19,7 +19,6 @@
         function getAllData(){
             return $http.get('/api/getAlbums')
                 .then((response) => {
-                    console.log(response.data);
                     return response.data;
                 })
                 .catch((err) => {
@@ -30,10 +29,7 @@
         function getSpecificAlbum(id){
             return $http.get('/api/getAlbum/'+id)
                 .then(function(response){
-                    let album = response.data.filter(function(obj) {
-                        return obj._id == id;
-                    });
-                    return album;
+                    return response.data;
                 })
                 .catch(function(err){
 
